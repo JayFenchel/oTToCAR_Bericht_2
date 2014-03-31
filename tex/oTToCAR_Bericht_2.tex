@@ -1,0 +1,72 @@
+ 
+\documentclass[a4paper,12pt,oneside,bibliography=totoc]{scrreprt}
+%%--- Einbinden von Erweiterungspaketen---%%
+%--- German text settings
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Darstellung einer wichtigen Aussage neben zwei Strichen
+% Parameter 1: die Länge der Striche (individuell anpassbar)
+%           2: die Aussage selbst
+\newcommand{\doubll}[2]{
+\begin{table}[h] 
+\begin{tabular}[t]{||r} 
+		\begin{minipage}[h][#1][t]{\textwidth}{ %[ÄUSSERE POSITION][HÖHE][INNERE POSITION]{BREITE}
+				#2 }
+\end{minipage}
+\end{tabular}
+\end{table}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[T1] {fontenc}		% 8bit-code for accent word separation 
+\usepackage[utf8] {inputenc} 		% umlauts and special characters
+\usepackage[ngerman]{babel}
+\usepackage{tabularx}
+%--- integrate pictures
+\usepackage[pdftex]{graphicx}		% \usepackage{graphicx}
+\usepackage{subfigure} 
+\usepackage{color}
+%---math
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+%\usepackage{siunitx}			% automatically insert SI units
+\usepackage[%per=slash,
+            decimalsymbol=comma,
+            loctolang={DE:ngerman},
+            ]{siunitx}
+
+\usepackage{url}
+%%----Definition eigener Befehle----------------%%
+%%----Ausführen global wirkender Befehle-----%%
+
+\begin{document}
+\include{title}
+
+\pagenumbering{Roman}
+%\include{abstract}
+\tableofcontents
+%\listoffigures
+%\listoftables
+%\include{abbrev}
+%\include{symb}
+\clearpage
+\pagenumbering{arabic}
+\pagestyle{plain}
+
+\include{Kapitel1}
+\include{Kapitel2}
+%\include{Dynamik}
+%\include{Simulation}
+
+%\begin{flushleft}
+%
+%\end{flushleft}
+%\include{paramestim}
+%\include{othertasks}
+%\include{Summary}
+\include{lit}
+
+%\begin{appendix}
+%\include{app}
+%\end{appendix}
+
+\end{document}
