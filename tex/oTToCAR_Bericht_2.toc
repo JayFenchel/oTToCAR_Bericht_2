@@ -1,6 +1,0 @@
-\select@language {ngerman}
-\contentsline {chapter}{\numberline {1}Kinematisches Modell}{1}
-\contentsline {section}{\numberline {1.1}Weltkoordinatensystem}{1}
-\contentsline {chapter}{\numberline {2}Dynamisches Modell}{2}
-\contentsline {section}{\numberline {2.1}Wirkende Kr\IeC {\"a}fte und Kr\IeC {\"a}ftebilanzen}{2}
-\contentsline {chapter}{Literaturverzeichnis}{3}
