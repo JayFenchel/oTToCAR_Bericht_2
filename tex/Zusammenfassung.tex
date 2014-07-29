@@ -1,0 +1,20 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Author: 	Hannes Heinemann
+% Date: 	29.07.2014
+% Content:	Zusammenfassung.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Zusammenfassung} \label{chap:summary}
+%und Ausblick
+
+Die vorliegende Arbeit ist Bestandteil des oTToCAR-Projekts zur Erstellung eines autonomen Fahrzeugs im Rahmen des Carolo-Cup Wettbewerbs. Inhaltlich bezieht sich die Arbeit auf den systemtheoretischen und regelungstechnischen Aspekt von oTToCAR.\newline  
+In Kapitel \ref{chap:kinematik} wird ein erstes Fahrzeugverständnis durch die Untersuchung kinematischer Bedingungen für das spezifische Fahrzeug mit Ackermann-Lenkung gewonnen. Aus den kinematischen Bedingungen wird die Verwendbarkeit eines Einspurmodells abgeleitet.
+Anschließend wird im Kapitel \ref{chap:dynamic} unter verschiedenen Annahmen ein dynamisches Einspurmodell für das Fahrverhalten in Zustandsraumdarstellung entwickelt.
+Dieses Modell ist in MATLAB implementiert und für verschiedene Parameter untersucht worden. Die Gültigkeit des Modells ist anhand der Plausibilität der Ergebnisse verschiedener Testszenarien in Kapitel \ref{chap:Simulation} geprüft.
+Im Anschluss an diese Arbeit soll die Aussagekraft des dynamischen Modells weiter geprüft und dazu mit realen Messdaten abgeglichen werden.
+Verändern sich Fahrzeug oder Fahrzeugumgebung während der weiteren Entwicklung, kann das implementierte Modell genutzt werden, um das neue Fahrzeugverhalten zu simulieren.
+
+Die Implementierung des dynamischen Modells ermöglicht eine Identifikation der Modellparameter in Kapitel \ref{chap:ParamEstim}.
+Die Parameterschätzung wird mit dem Multiple Shooting Verfahren durchgeführt.
+Zunächst können in der Simulation eingesetzte Parameter zurück geschätzt werden. Anschließend können Tests an realen, vom Fahrzeug generierten Messdaten durchgeführt werden.
+Dabei wird darauf geachtet, dass die Durchführung des Verfahrens jederzeit und ohne viel Aufwand wiederholbar ist. Dies garantiert eine mögliche Anpassung der Parameter bei baulichen Veränderungen des Fahrzeugs sowie bei Änderungen der  Untergrundbeschaffenheit beim späteren Wettkampf. 
+
